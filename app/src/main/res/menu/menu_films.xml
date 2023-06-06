@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add"
+        android:title="Добавить фильм" />
+    <item
+        android:id="@+id/menu_delete"
+        android:title="Удалить фильм" />
+    <item
+        android:id="@+id/menu_search"
+        android:title="Поиск по названию фильма" />
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Сортировать по жанру" />
+    <item
+        android:id="@+id/menu_show_all"
+        android:title="Показать обычный список" />
+
+</menu>

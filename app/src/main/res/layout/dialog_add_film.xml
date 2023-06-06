@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название фильма"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/et_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Жанр фильма"
+        android:maxLines="1" />
+    <EditText
+        android:id="@+id/et_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Автор"
+        android:maxLines="1" />
+    <EditText
+        android:id="@+id/et_sumary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/btn_choose_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/grey"
+        android:layout_marginTop="16dp"
+        android:text="Выбрать фото" />
+
+ >
+
+    <Button
+        android:id="@+id/btn_add"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Добавить" />
+
+</LinearLayout>

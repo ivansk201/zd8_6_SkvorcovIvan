@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text1"
+        android:textColor="@color/redtext"
+        android:textSize="40dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/obovodkaedittext"
+        android:hint="Имя"
+        android:paddingStart="18dp"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/obovodkaedittext"
+        android:hint="Фамилия"
+        android:paddingStart="18dp"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:background="@drawable/obovodkaedittext"
+        android:layout_marginTop="16dp"
+        android:hint="E-mail"
+        android:paddingStart="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:background="@drawable/obovodkaedittext"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Пароль"
+        android:paddingStart="18dp"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:background="@drawable/obovodkaedittext"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:paddingStart="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:hint="Повторите пароль"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="next2page"
+        android:id="@+id/appCompatButton"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Зарегистрироваться"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:text="У меня уже есть аккаунт"
+        android:textColor="@color/bluetext"
+        android:background="@drawable/button2"
+        android:onClick="loadSavedUserData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
